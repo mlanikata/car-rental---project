@@ -58,7 +58,6 @@ button {
   padding: 28px 20px;
 }
 
-
 .nav__links {
   display: flex;
   gap: 20px;
@@ -91,9 +90,18 @@ button {
   transition: 200ms ease;
 }
 
-
 /* Header */
 
+.header__row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header {
+  height: 100vh;
+  background-color: #f8f8f8;
+}
 
 .header-bg {
   position: absolute;
@@ -110,9 +118,18 @@ button {
   margin-top: 56px;
 }
 
-header__img {
+.header__img {
   width: 100%;
   height: 100%;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  z-index: 3;
+  margin-top: 56px;
 }
 
 .header__text__subtitle {
@@ -131,7 +148,7 @@ header__img {
   z-index: 1;
 }
 
-.header__text__btn{
+.header__text__btn {
   font-size: 16px;
   font-weight: 600;
   padding: 12px 24 px;
@@ -141,60 +158,194 @@ header__img {
   padding: 12px 24px;
   color: white;
   transition: 200ms ease;
-
 }
 
-.header__text__book{
-    background-color: var(--primary);
-    box-shadow: 0px 8px 13px 0px rgba(255, 83, 48, 0.35);
-  }
+.header__text__book {
+  background-color: var(--primary);
+  box-shadow: 0px 8px 13px 0px rgba(255, 83, 48, 0.35);
+}
 
-  .header__text__learn{
-    background-color: var(--black);
-    border: 2px solid transparent;
-   
-  }
+.header__text__learn {
+  background-color: var(--black);
+  border: 2px solid transparent;
+}
 
-  .header__text__learn__btn:hover {
-    border-color: #000;
-    background-color: transparent;
-    color: #000;
-  }
+.header__text__learn__btn:hover {
+  border-color: #000;
+  background-color: transparent;
+  color: #000;
+}
 
-
-  .header__text__para{
-    color: var(--gray);
-  }
-
+.header__text__para {
+  color: var(--gray);
+}
 
 /* Feature */
 
-#features{
+#features {
+  height: 100vh;
   background-color: white;
 }
 
-.features__list{
+.features__list {
   display: flex;
-
+  padding: 0 30px;
+  margin-top: 30[x];
+  gap: 50px 118px;
 }
 
-.feature{
+.feature {
   width: (100% / 3);
   display: flex;
   flex-direction: column;
 }
 
-.feature__para{
+features__title {
+  font-size: 42px;
+}
+
+.feature__para {
   color: var(--gray);
 }
 
+.features__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
 
-
-
+.feature__img {
+  width: 100%;
+  height: 100%px;
+}
 
 /* Banner */
 
+#banner {
+  background-color: var(--lightblack);
+  color: white;
+}
+.banner__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 20px;
+  gap: 16px;
+  text-align: center;
+}
+
+.banner__title {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.banner__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  z-index: 4;
+}
+
 /* Choose */
+
+.choose__text__btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24 px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 24px;
+  color: white;
+  transition: 200ms ease;
+  background-color: var(--primary);
+  box-shadow: 0px 8px 13px 0px rgba(255, 83, 48, 0.35);
+}
+
+.choose__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 20px;
+}
+
+.choose__text__title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  z-index: 3;
+  margin-top: 5px;
+}
+
+.choose__text__subtitle {
+  font-size: 20px;
+}
+
+.choose__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.choose__text{
+  align-items: center;
+}
+
+.choose__feature__img__wrapper {
+  width: 110px;
+  height: 110px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.choose__img__wrapper {
+  width: 100%;
+ 
+}
+
+.choose__img {
+  width: 100%;
+  height: 100%;
+}
+
+.choose__content {
+  width: 100%;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+  gap: 35px;
+}
+
+.choose__content{
+  display: flex;
+  justify-content: space-around;
+}
+.choose__features {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.choose__feature {
+  display: flex;
+}
+
+.choose__text__para {
+  margin: 10px;
+  color: var(--gray);
+}
+
+.choose__feature__text__para {
+  color: var(--gray);
+}
 
 /* Testimonials */
 
