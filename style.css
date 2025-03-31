@@ -45,6 +45,10 @@ img {
   overflow: clip;
 }
 
+.fa-solid{
+  font-weight: 900;
+}
+
 /* Navigation */
 
 .nav__img {
@@ -94,6 +98,58 @@ img {
   color: white;
   transition: 200ms ease;
 }
+
+.nav__menu{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+
+/* Menu */
+
+.menu{
+  position: fixed;
+  background-color: #f8f8f8;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease;
+
+}
+
+.menu__close{
+  position: absolute;
+  top: 44px;
+  right: 32px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.menu__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+}
+
+.menu__link{
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
 
 /* Header */
 
@@ -188,7 +244,6 @@ header {
 /* Feature */
 
 #features {
-  height: 100vh;
   background-color: white;
 }
 
@@ -410,13 +465,16 @@ gap: 40px;
   overflow: hidden;
 }
 
-.testimonial__info_icon{
+
+.testimonial__info__icon{
   color: var(--primary);
+  margin-left: auto;
+  font-size: 48px;
 }
 
 .testimonial__info__img{
-  width: 100px; 
-  height: 100px;
+  width: 100%; 
+  height: 100%;
   font-size: 45px;
 
 }
@@ -485,9 +543,106 @@ a {
 
 /* Footer */
 
+.footer__row{
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.footer__intro {
+width: 25%;
+}
+
+.footer__content{
+display: flex;
+flex-direction: column;
+width: 25%;
+gap: 15px;
+
+}
+
+.footer__intro__title{
+font-size: 24px;
+
+}
+
+.footer__intro__para{
+  color:var(--gray);
+}
+
+.footer__intro__links{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__intro__links{
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+
+.footer__intro__link{
+  color:var(--black);
+  transition: 300ms ease;
+}
+
+.footer__company__title{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer__hours__title{
+  font-size: 20px;
+  text-transform: uppercase;
+  color:var(--black);
+}
+
+.footer__subscription__title{
+  font-size: 20px;
+  text-transform: uppercase;
+  color:var(--black);
+}
+
+.footer__email__form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.footer__email__form__input{
+  height: 45px;
+  padding: 0 16px;
+  outline: none;
+  border: none;
+  background-color: #ececec;
+}
+
+.footer__email__form__submit{
+height: 48px;
+font-size: 15px;
+font-weight: 700;
+border: none;
+outline: none;
+color: white;
+background: var(--primary);
+border-radius: 4px;
+box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+transition: 300ms ease;
+}
+
+
+
 /* Lg Screens @media (max-width: 1024px) */
 
 /* Tablets - MD Screens @media (max-width: 768px)  */
 
 /* Sm Screens  @media (max-width: 640px) */
-`
+
+@media (max-width: 640px){
+  .nav__menu {
+    display: block;
+  }
+}

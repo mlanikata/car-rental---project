@@ -26,11 +26,31 @@
           <a href="contact" class="nav__link">Contact</a>
         </div>
         <div class="nav__btns">
+
           <a class="nav__link" href=""> Sign In</a>
           <button class="nav__btns__register">Register</button>
+            </a>
         </div>
+        <button class="nav__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
+
+<nav class="menu">
+  <button class="menu__close" onclick="closeMenu()">
+    <i class="fa-solid fa-x"></i>
+  </button>
+  <div class="menu__links">
+    <a href="#" class="menu__link" onclick="closeMenu()"">Home</a>
+    <a href="#" class="menu__link" onclick="closeMenu()"">About</a>
+    <a href="#" class="menu__link" onclick="closeMenu()"">Vehicle Models</a>
+    <a href="#" class="menu__link" onclick="closeMenu()"">Testimonials</a>
+    <a href="#" class="menu__link" onclick="closeMenu()"">Our Team</a>
+    <a href="#" class="menu__link" onclick="closeMenu()"">Contact</a>
+  </div>
+</nav>
+
 
     <!-- Header -->
     <header>
@@ -217,37 +237,52 @@
             <h3 class="testimonials__text__subtitle">Reviewed by People</h3>
             <h2 class="testimonials__text__title">Client's Testimonials</h2>
             <p class="testimonial__review__para-1">
-              "Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you. "
+              "Discover the positive impact we've made on the our clients by
+              reading through their testimonials. Our clients have experienced
+              our service and results, and they're eager to share their positive
+              experiences with you. "
             </p>
             <div class="testimonials__list">
               <div class="testimonial">
                 <p class="testimonial__review__para-2">
-                  "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "
+                  "We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable. "
                 </p>
                 <div class="testimonial__info">
                   <figure class="testimonial__info__img__wrapper">
-                    <img src="assets/testimonial-1.jpg" alt class="testimonial__info__img">
+                    <img
+                      src="assets/testimonial-1.jpg"
+                      alt
+                      class="testimonial__info__img"
+                    />
                   </figure>
                   <div class="testimonial__info__profile">
                     <h4 class="testimonial__info__name">Parry Hotter</h4>
-                    <h5 class="testimonial__info__ocation">Belgrade</h5>
+                    <h5 class="testimonial__info__location">Belgrade</h5>
                   </div>
-                  <i class="fa-solid fa-quote-right testimonial__info_icon"></i>
+                  <i class="fa-solid fa-quote-right testimonial__info__icon"></i>
                 </div>
               </div>
               <div class="testimonial">
                 <p class="testimonial__review__para-2">
-                  "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "
+                  "We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable. "
                 </p>
                 <div class="testimonial__info">
                   <figure class="testimonial__info__img__wrapper">
-                    <img src="assets/testimonial-2.jpg" alt class="testimonial__info__img">
+                    <img
+                      src="assets/testimonial-2.jpg"
+                      alt
+                      class="testimonial__info__img"
+                    />
                   </figure>
                   <div class="testimonial__info__profile">
                     <h4 class="testimonial__info__name">Ron Rizzly</h4>
-                    <h5 class="testimonial__info__ocation">Novi Sad</h5>
+                    <h5 class="testimonial__info__location">Novi Sad</h5>
                   </div>
-                  <i class="fa-solid fa-quote-right testimonial__info_icon"></i>
+                  <i class="fa-solid fa-quote-right testimonial__info__icon"></i>
                 </div>
               </div>
             </div>
@@ -256,33 +291,98 @@
       </section>
 
       <!-- Download -->
-
       <section id="download">
         <div class="container download__container">
           <div class="row download__row">
-          <div class="download__text">
-            <h2 class="download__text__title">Download our app to get most out of it</h2>
-            <p class="download__text__para">
-              Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.
-            </p>
-            <div class="download__text__links">
-              <a href="#" class="download__text__link">
-                <img src="assets/download.png" alt class="download__text__link__img">
-              </a>
+            <div class="download__text">
+              <h2 class="download__text__title">
+                Download our app to get most out of it
+              </h2>
+              <p class="download__text__para">
+                Thrown shy denote ten ladies though ask saw. Or by to he going
+                think order event music. Incommode so intention defective at
+                convinced. Led income months itself and houses you.
+              </p>
+              <div class="download__text__links">
                 <a href="#" class="download__text__link">
-                  <img src="assets/download (1).png" alt class="download__text__link__img">
+                  <img
+                    src="assets/download.png"
+                    alt
+                    class="download__text__link__img"
+                  />
                 </a>
+                <a href="#" class="download__text__link">
+                  <img
+                    src="assets/download (1).png"
+                    alt
+                    class="download__text__link__img"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
       <!-- Footer -->
-
-     <footer>
-      
-     </footer>
+      <footer>
+        <div class="container">
+          <div class="row footer__row">
+            <div class="footer__intro footer__content">
+              <h4 class="footer__intro__title">
+                <b>CAR</b>
+                Rental
+              </h4>
+              <p class="footer__intro__para">
+                We offer a big range of vehicles for all your driving needs. We
+                have the perfect car to meet your needs.
+              </p>
+              <div class="footer__intro__links">
+                <a href="tel:1234567890" class="footer__intro__link">
+                  <i class="fa-solid fa-phone footer__intro__link__icon"></i>
+                  <span class="footer__intro__link__span"> (123) -456-7890</span>
+                </a>
+                <a href="mailto:carrental@gmail.com" class="footer__intro__link__icon">
+                  <i class="fa-solid fa-envelope footer__intro__link"></i>
+                  <span class="footer__intro__link__span"> carrental@gmail.com</span>
+                </a>
+                <a href="https://xspeedstudio.com/" class="footer__intro__link">Design by XpeedStudio</a>
+              </div>
+            </div>
+            <div class="footer__company footer__content">
+              <h4 class="footer__company__title">Company</h4>
+              <div class="footer__intro__links">
+                <a href="City" class="footer__intro__link">New York</a>
+                <a href="Careers" class="footer__intro__link">Careers</a>
+                <a href="mobile" class="footer__intro__link">Mobile</a>
+                <a href="blog" class="footer__intro__link">Blog</a>
+                <a href="work" class="footer__intro__link">How we work</a>
+              </div>
+            </div>
+            <div class="footer__hours footer__content">
+              <h4 class="footer__hours__title">Working Hours</h4>
+              <p class="footer__hours__para">Mon - Fri: 9:00AM - 9:00PM</p>
+              <p class="footer__hours__para">Sat: 9:00AM - 19:00PM</p>
+              <p class="footer__hours__para">Sun: Closed</p>
+            </div>
+            <div class="footer__subscription footer__content">
+              <h4 class="footer__subscription__title">Subscription</h4>
+              <p class="footer__subscription__para">
+                Subscribe your Email address for latest news & updates.
+              </p>
+              <form action="#" class="footer__email__form">
+                <input
+                  type="email"
+                  placeholder="Enter Email Address"
+                  class="footer__email__form__input">
+                  <button class="footer__email__form__submit">Submit</button>
+              </form>
+          
+              
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
